@@ -1,0 +1,174 @@
+/*********************Global Styles************************************************/
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif !important;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+/* ------------------Global Styles End-------------------------- */
+
+/*--------------------Hero Section Starts---------------------------*/
+header {
+  background: no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  /* max-width: 1200px; */
+}
+
+.color_overlay {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content_wrapper {
+  min-height: 80vh;
+}
+
+.logo_wrapper img {
+  height: 120px;
+  width: auto;
+  padding: 1em;
+  background-color: rgba(169, 117, 116, 0.9);
+  border-radius: 15px;
+}
+
+/*############navbar#########*/
+.navbar_wrapper nav {
+  padding: 2em 3em;
+}
+
+.navbar_wrapper nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar_wrapper nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.navbar_wrapper nav ul li {
+  cursor: pointer;
+}
+
+.navbar_wrapper nav ul li a {
+  text-decoration: none !important;
+  position: relative;
+  color: #fff;
+}
+
+.navbar_wrapper nav ul li a::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: goldenrod;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  opacity: 0;
+}
+
+.navbar_wrapper nav ul li a:hover::after {
+  opacity: 1;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.navbar_wrapper nav img {
+  height: 21px;
+  width: 21px;
+  cursor: pointer;
+}
+
+.split_section {
+  margin: 1rem 0em;
+  position: relative;
+  color: #666;
+  padding-left: 0rem;
+  &:before,
+  &:after {
+    content: "";
+    width: 150px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+  }
+  &:before {
+    left: 60px;
+  }
+  &:after {
+    left: -160px;
+  }
+}
+
+.hero_desc_section {
+  font-size: small;
+  margin: 0 auto;
+  max-width: 70vw;
+}
+
+/*--------------------Hero Section Ends---------------------------*/
+
+.white_beans_logo svg {
+  fill: #ffffff;
+  height: 50px;
+  width: 50px;
+}
+
+/* pinkish--->#F6EADC */
+/* browninsh--->#957D71 */
