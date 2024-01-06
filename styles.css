@@ -221,6 +221,7 @@ header {
   font-size: small;
   margin: 0 auto;
   max-width: 70vw;
+  text-align: justify;
 }
 
 /*--------------------Hero Section Ends---------------------------*/
@@ -378,6 +379,13 @@ header {
   color: #fff;
   font-size: small;
   font-weight: lighter;
+  text-align: justify;
+}
+
+@media (max-width: 640px) {
+  .history_desc_wrapper {
+    width: 90%;
+  }
 }
 
 /*-----------history section ends----------*/
