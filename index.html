@@ -30,6 +30,10 @@
     <title>Case Coffee</title>
   </head>
   <body>
+    <div class="loader_bg">
+      <div class="loader"></div>
+    </div>
+
     <div>
       <!------------ Hero section-------------------->
       <header style="background-image: url(./assets/banners/big-banner.jpg)">
@@ -67,9 +71,12 @@
                 </li>
                 <li class="hide_on_phone"><a href="/">About</a></li>
                 <li class="hide_on_phone"><a href="/">Contact</a></li>
-                <div class="menu_bar">
+                <!-- <div class="menu_bar">
                   <img src="assets/icons/menu.png" alt="menu--v6" />
-                </div>
+                </div> -->
+                <button class="hamburger">
+                  <div class="bar"></div>
+                </button>
               </ul>
             </nav>
           </div>
@@ -123,6 +130,22 @@
           </div>
         </div>
       </header>
+      <nav class="mobile-nav">
+        <div
+          class="nav_close_btn_wrapper d-flex justify-content-end align-items-end"
+        >
+          <button class="nav_close_btn">
+            <img
+              alt="menu-close-icon"
+              src="./assets/icons/menu_close_icon.png"
+            />
+          </button>
+        </div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#" id="contrast_link">Go Back</a>
+      </nav>
       <!------------ Hero section ends -------------->
 
       <!---------------- offer section --------------------->
@@ -570,6 +593,12 @@
     </div>
 
     <script src="js/main.js"></script>
+
+    <script>
+      setTimeout(function () {
+        $(".loader_bg").addClass("loader_hide");
+      }, 1500);
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
