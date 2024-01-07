@@ -859,7 +859,10 @@
 
                        <div class="col-lg-4 col-md-4 col-sm-12">
                          <div class="achievement_section_box d-flex flex-column flex-gap-20 justify-content-center align-items-center">
-                              <span class="achievement_section_box_stat">65</span>
+                          <div class="d-flex">
+                             <span class="achievement_section_box_stat count">65</span><span class="achievement_section_box_stat ml-1">+</span>
+                          </div>   
+                         
                             <span class="achievement_section_box_title">Varities Of Coffee</span>
                             <span class="achievement_section_box_desc">Lorem ipsum dolor sit amet,consectetuer</span>
                          </div>
@@ -867,7 +870,9 @@
 
                        <div class="col-lg-4 col-md-4 col-sm-12">
                          <div class="achievement_section_box d-flex flex-column flex-gap-20 justify-content-center align-items-center">
-                              <span class="achievement_section_box_stat">700</span>
+                              <div class="d-flex">
+                             <span class="achievement_section_box_stat count">700</span><span class="achievement_section_box_stat ml-1">+</span>
+                          </div>   
                             <span class="achievement_section_box_title">Huge Customer Base</span>
                             <span class="achievement_section_box_desc">Lorem ipsum dolor sit amet,consectetuer</span>
                          </div>
@@ -876,7 +881,9 @@
 
                        <div class="col-lg-4 col-md-4 col-sm-12">
                          <div class="achievement_section_box d-flex flex-column flex-gap-20 justify-content-center align-items-center">
-                              <span class="achievement_section_box_stat">50</span>
+                             <div class="d-flex">
+                             <span class="achievement_section_box_stat count">50</span><span class="achievement_section_box_stat ml-1">+</span>
+                          </div>   
                             <span class="achievement_section_box_title">Varities Of Coffee</span>
                             <span class="achievement_section_box_desc">Lorem ipsum dolor sit amet,consectetuer</span>
                          </div>
@@ -981,6 +988,7 @@
       setTimeout(function () {
         $(".loader_bg").addClass("loader_hide");
       }, 1500);
+
     </script>
 
     <!-- Optional JavaScript -->
@@ -1000,6 +1008,16 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <!-- counter animation js -->
+    <script>
+      $('.count').counterUp({
+        delay: 10,
+        time: 2000
+       });
+    </script>
 
   </body>
 </html>
