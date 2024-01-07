@@ -24,6 +24,11 @@
       crossorigin="anonymous"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
     <!-- custom css file -->
     <link rel="stylesheet" href="styles.css" />
 
@@ -591,9 +596,9 @@
       </div>
       <!----------------- history section ends--------------------->
 
-        <!-------------- big carouel section --------------------->
-        <div class="big_carousal_section">
-          <div
+      <!-------------- big carouel section --------------------->
+      <div class="big_carousal_section">
+        <div
           id="carouselExampleIndicators2"
           class="carousel slide"
           data-ride="carousel"
@@ -604,8 +609,14 @@
               data-slide-to="0"
               class="active"
             ></li>
-            <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+            <li
+              data-target="#carouselExampleIndicators2"
+              data-slide-to="1"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators2"
+              data-slide-to="2"
+            ></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -618,57 +629,59 @@
                 <div
                   class="color_overlay d-flex justify-content-center align-items-center"
                 >
-                  <div class="big_carousal_inner_wrapper d-flex flex-column justify-content-center align-items-center">
+                  <div
+                    class="big_carousal_inner_wrapper d-flex flex-column justify-content-center align-items-center"
+                  >
                     <div class="logo_wrapper">
                       <img src="assets/icons/logo-no-background.png" />
-                    </div>  
-                   <div class="history_section_header" style="width: 100%;">
-                  <h1>Our Customer’s Favourite</h1>
-                </div>
-                <div class="split_section_small_white">
-                  <div class="white_beans_logo_small">
-                    <svg
-                      version="1.1"
-                      id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      x="0px"
-                      y="0px"
-                      viewBox="0 0 122.88 96.84"
-                      style="enable-background: new 0 0 122.88 96.84"
-                      xml:space="preserve"
-                    >
-                      <style type="text/css">
-                        .st0 {
-                          fill-rule: evenodd;
-                          clip-rule: evenodd;
-                        }
-                      </style>
-                      <g>
-                        <path
-                          class="st0"
-                          d="M31.96,0c14.08,0,26.03,12.61,30.29,30.11c-1.07,0.94-2.12,1.92-3.15,2.95c-9.36,9.36-15.11,20.63-16.82,31.26 c-1.2,7.41-0.44,14.53,2.38,20.54c-2.72,1.63-5.64,2.76-8.69,3.29c5.92-23.37,3.06-34.99-1.37-45.75 c-4.29-10.42-10.11-21.59-3.54-42.39C31.35,0.01,31.66,0,31.96,0L31.96,0z M115.57,26.95c12.48,12.48,8.59,36.61-8.69,53.89 c-15.95,15.95-37.73,20.49-50.8,11.29c20.71-12.34,26.9-22.58,31.38-33.32c4.33-10.4,8.12-22.42,27.47-32.47 C115.14,26.53,115.36,26.74,115.57,26.95L115.57,26.95z M53.98,90.46c-0.34-0.3-0.67-0.61-0.99-0.93 c-12.48-12.48-8.59-36.61,8.69-53.89c16.28-16.28,38.63-20.67,51.6-10.7C92.53,35.42,86.92,44.22,82.36,55.17 C78.08,65.43,73.45,78.58,53.98,90.46L53.98,90.46z M33.31,88.46c-0.45,0.03-0.9,0.04-1.35,0.04C14.31,88.5,0,68.69,0,44.25 C0,21.23,12.7,2.31,28.93,0.2c-7.27,22.08-5.01,32.27-0.5,43.23C32.66,53.72,38.68,66.29,33.31,88.46L33.31,88.46z"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-
-                <div class="text-center mt-4 px-2">
-                    <div class="big_carousel_caption_title ">
-                        <p>Cappucino</p>
                     </div>
-                    <p class="big_carousel_caption_desc">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                    </p>
-                </div>
+                    <div class="history_section_header" style="width: 100%">
+                      <h1>Our Customer’s Favourite</h1>
+                    </div>
+                    <div class="split_section_small_white">
+                      <div class="white_beans_logo_small">
+                        <svg
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 122.88 96.84"
+                          style="enable-background: new 0 0 122.88 96.84"
+                          xml:space="preserve"
+                        >
+                          <style type="text/css">
+                            .st0 {
+                              fill-rule: evenodd;
+                              clip-rule: evenodd;
+                            }
+                          </style>
+                          <g>
+                            <path
+                              class="st0"
+                              d="M31.96,0c14.08,0,26.03,12.61,30.29,30.11c-1.07,0.94-2.12,1.92-3.15,2.95c-9.36,9.36-15.11,20.63-16.82,31.26 c-1.2,7.41-0.44,14.53,2.38,20.54c-2.72,1.63-5.64,2.76-8.69,3.29c5.92-23.37,3.06-34.99-1.37-45.75 c-4.29-10.42-10.11-21.59-3.54-42.39C31.35,0.01,31.66,0,31.96,0L31.96,0z M115.57,26.95c12.48,12.48,8.59,36.61-8.69,53.89 c-15.95,15.95-37.73,20.49-50.8,11.29c20.71-12.34,26.9-22.58,31.38-33.32c4.33-10.4,8.12-22.42,27.47-32.47 C115.14,26.53,115.36,26.74,115.57,26.95L115.57,26.95z M53.98,90.46c-0.34-0.3-0.67-0.61-0.99-0.93 c-12.48-12.48-8.59-36.61,8.69-53.89c16.28-16.28,38.63-20.67,51.6-10.7C92.53,35.42,86.92,44.22,82.36,55.17 C78.08,65.43,73.45,78.58,53.98,90.46L53.98,90.46z M33.31,88.46c-0.45,0.03-0.9,0.04-1.35,0.04C14.31,88.5,0,68.69,0,44.25 C0,21.23,12.7,2.31,28.93,0.2c-7.27,22.08-5.01,32.27-0.5,43.23C32.66,53.72,38.68,66.29,33.31,88.46L33.31,88.46z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
 
-                 </div>
+                    <div class="text-center mt-4 px-2">
+                      <div class="big_carousel_caption_title">
+                        <p>Cappucino</p>
+                      </div>
+                      <p class="big_carousel_caption_desc">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh
+                      </p>
+                    </div>
                   </div>
                 </div>
+              </div>
             </div>
 
-              <div class="carousel-item">
+            <div class="carousel-item">
               <div
                 class="big_carousal_wrapper d-block w-100"
                 style="
@@ -678,57 +691,57 @@
                 <div
                   class="color_overlay d-flex justify-content-center align-items-center"
                 >
-                  <div class="big_carousal_inner_wrapper d-flex flex-column justify-content-center align-items-center">
+                  <div
+                    class="big_carousal_inner_wrapper d-flex flex-column justify-content-center align-items-center"
+                  >
                     <div class="logo_wrapper">
                       <img src="assets/icons/logo-no-background.png" />
-                    </div>  
-                   <div class="history_section_header" style="width: 100%;">
-                  <h1>Our Customer’s Favourite</h1>
-                </div>
-                <div class="split_section_small_white">
-                  <div class="white_beans_logo_small">
-                    <svg
-                      version="1.1"
-                      id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      x="0px"
-                      y="0px"
-                      viewBox="0 0 122.88 96.84"
-                      style="enable-background: new 0 0 122.88 96.84"
-                      xml:space="preserve"
-                    >
-                      <style type="text/css">
-                        .st0 {
-                          fill-rule: evenodd;
-                          clip-rule: evenodd;
-                        }
-                      </style>
-                      <g>
-                        <path
-                          class="st0"
-                          d="M31.96,0c14.08,0,26.03,12.61,30.29,30.11c-1.07,0.94-2.12,1.92-3.15,2.95c-9.36,9.36-15.11,20.63-16.82,31.26 c-1.2,7.41-0.44,14.53,2.38,20.54c-2.72,1.63-5.64,2.76-8.69,3.29c5.92-23.37,3.06-34.99-1.37-45.75 c-4.29-10.42-10.11-21.59-3.54-42.39C31.35,0.01,31.66,0,31.96,0L31.96,0z M115.57,26.95c12.48,12.48,8.59,36.61-8.69,53.89 c-15.95,15.95-37.73,20.49-50.8,11.29c20.71-12.34,26.9-22.58,31.38-33.32c4.33-10.4,8.12-22.42,27.47-32.47 C115.14,26.53,115.36,26.74,115.57,26.95L115.57,26.95z M53.98,90.46c-0.34-0.3-0.67-0.61-0.99-0.93 c-12.48-12.48-8.59-36.61,8.69-53.89c16.28-16.28,38.63-20.67,51.6-10.7C92.53,35.42,86.92,44.22,82.36,55.17 C78.08,65.43,73.45,78.58,53.98,90.46L53.98,90.46z M33.31,88.46c-0.45,0.03-0.9,0.04-1.35,0.04C14.31,88.5,0,68.69,0,44.25 C0,21.23,12.7,2.31,28.93,0.2c-7.27,22.08-5.01,32.27-0.5,43.23C32.66,53.72,38.68,66.29,33.31,88.46L33.31,88.46z"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-
-                <div class="text-center mt-4 px-2">
-                    <div class="big_carousel_caption_title ">
-                        <p>Moccha</p>
                     </div>
-                    <p class="big_carousel_caption_desc">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                    </p>
-                </div>
+                    <div class="history_section_header" style="width: 100%">
+                      <h1>Our Customer’s Favourite</h1>
+                    </div>
+                    <div class="split_section_small_white">
+                      <div class="white_beans_logo_small">
+                        <svg
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 122.88 96.84"
+                          style="enable-background: new 0 0 122.88 96.84"
+                          xml:space="preserve"
+                        >
+                          <style type="text/css">
+                            .st0 {
+                              fill-rule: evenodd;
+                              clip-rule: evenodd;
+                            }
+                          </style>
+                          <g>
+                            <path
+                              class="st0"
+                              d="M31.96,0c14.08,0,26.03,12.61,30.29,30.11c-1.07,0.94-2.12,1.92-3.15,2.95c-9.36,9.36-15.11,20.63-16.82,31.26 c-1.2,7.41-0.44,14.53,2.38,20.54c-2.72,1.63-5.64,2.76-8.69,3.29c5.92-23.37,3.06-34.99-1.37-45.75 c-4.29-10.42-10.11-21.59-3.54-42.39C31.35,0.01,31.66,0,31.96,0L31.96,0z M115.57,26.95c12.48,12.48,8.59,36.61-8.69,53.89 c-15.95,15.95-37.73,20.49-50.8,11.29c20.71-12.34,26.9-22.58,31.38-33.32c4.33-10.4,8.12-22.42,27.47-32.47 C115.14,26.53,115.36,26.74,115.57,26.95L115.57,26.95z M53.98,90.46c-0.34-0.3-0.67-0.61-0.99-0.93 c-12.48-12.48-8.59-36.61,8.69-53.89c16.28-16.28,38.63-20.67,51.6-10.7C92.53,35.42,86.92,44.22,82.36,55.17 C78.08,65.43,73.45,78.58,53.98,90.46L53.98,90.46z M33.31,88.46c-0.45,0.03-0.9,0.04-1.35,0.04C14.31,88.5,0,68.69,0,44.25 C0,21.23,12.7,2.31,28.93,0.2c-7.27,22.08-5.01,32.27-0.5,43.23C32.66,53.72,38.68,66.29,33.31,88.46L33.31,88.46z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
 
-                 </div>
+                    <div class="text-center mt-4 px-2">
+                      <div class="big_carousel_caption_title">
+                        <p>Moccha</p>
+                      </div>
+                      <p class="big_carousel_caption_desc">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh
+                      </p>
+                    </div>
                   </div>
                 </div>
+              </div>
             </div>
-
-
 
             <div class="carousel-item">
               <div
@@ -740,176 +753,345 @@
                 <div
                   class="color_overlay d-flex justify-content-center align-items-center"
                 >
-                  <div class="big_carousal_inner_wrapper d-flex flex-column justify-content-center align-items-center">
+                  <div
+                    class="big_carousal_inner_wrapper d-flex flex-column justify-content-center align-items-center"
+                  >
                     <div class="logo_wrapper">
                       <img src="assets/icons/logo-no-background.png" />
-                    </div>  
-                   <div class="history_section_header" style="width: 100%;">
-                  <h1>Our Customer’s Favourite</h1>
-                </div>
-                <div class="split_section_small_white">
-                  <div class="white_beans_logo_small">
-                    <svg
-                      version="1.1"
-                      id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      x="0px"
-                      y="0px"
-                      viewBox="0 0 122.88 96.84"
-                      style="enable-background: new 0 0 122.88 96.84"
-                      xml:space="preserve"
-                    >
-                      <style type="text/css">
-                        .st0 {
-                          fill-rule: evenodd;
-                          clip-rule: evenodd;
-                        }
-                      </style>
-                      <g>
-                        <path
-                          class="st0"
-                          d="M31.96,0c14.08,0,26.03,12.61,30.29,30.11c-1.07,0.94-2.12,1.92-3.15,2.95c-9.36,9.36-15.11,20.63-16.82,31.26 c-1.2,7.41-0.44,14.53,2.38,20.54c-2.72,1.63-5.64,2.76-8.69,3.29c5.92-23.37,3.06-34.99-1.37-45.75 c-4.29-10.42-10.11-21.59-3.54-42.39C31.35,0.01,31.66,0,31.96,0L31.96,0z M115.57,26.95c12.48,12.48,8.59,36.61-8.69,53.89 c-15.95,15.95-37.73,20.49-50.8,11.29c20.71-12.34,26.9-22.58,31.38-33.32c4.33-10.4,8.12-22.42,27.47-32.47 C115.14,26.53,115.36,26.74,115.57,26.95L115.57,26.95z M53.98,90.46c-0.34-0.3-0.67-0.61-0.99-0.93 c-12.48-12.48-8.59-36.61,8.69-53.89c16.28-16.28,38.63-20.67,51.6-10.7C92.53,35.42,86.92,44.22,82.36,55.17 C78.08,65.43,73.45,78.58,53.98,90.46L53.98,90.46z M33.31,88.46c-0.45,0.03-0.9,0.04-1.35,0.04C14.31,88.5,0,68.69,0,44.25 C0,21.23,12.7,2.31,28.93,0.2c-7.27,22.08-5.01,32.27-0.5,43.23C32.66,53.72,38.68,66.29,33.31,88.46L33.31,88.46z"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-
-                <div class="text-center mt-4 px-2">
-                    <div class="big_carousel_caption_title ">
-                        <p>Latte</p>
                     </div>
-                    <p class="big_carousel_caption_desc">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                    </p>
-                </div>
+                    <div class="history_section_header" style="width: 100%">
+                      <h1>Our Customer’s Favourite</h1>
+                    </div>
+                    <div class="split_section_small_white">
+                      <div class="white_beans_logo_small">
+                        <svg
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 122.88 96.84"
+                          style="enable-background: new 0 0 122.88 96.84"
+                          xml:space="preserve"
+                        >
+                          <style type="text/css">
+                            .st0 {
+                              fill-rule: evenodd;
+                              clip-rule: evenodd;
+                            }
+                          </style>
+                          <g>
+                            <path
+                              class="st0"
+                              d="M31.96,0c14.08,0,26.03,12.61,30.29,30.11c-1.07,0.94-2.12,1.92-3.15,2.95c-9.36,9.36-15.11,20.63-16.82,31.26 c-1.2,7.41-0.44,14.53,2.38,20.54c-2.72,1.63-5.64,2.76-8.69,3.29c5.92-23.37,3.06-34.99-1.37-45.75 c-4.29-10.42-10.11-21.59-3.54-42.39C31.35,0.01,31.66,0,31.96,0L31.96,0z M115.57,26.95c12.48,12.48,8.59,36.61-8.69,53.89 c-15.95,15.95-37.73,20.49-50.8,11.29c20.71-12.34,26.9-22.58,31.38-33.32c4.33-10.4,8.12-22.42,27.47-32.47 C115.14,26.53,115.36,26.74,115.57,26.95L115.57,26.95z M53.98,90.46c-0.34-0.3-0.67-0.61-0.99-0.93 c-12.48-12.48-8.59-36.61,8.69-53.89c16.28-16.28,38.63-20.67,51.6-10.7C92.53,35.42,86.92,44.22,82.36,55.17 C78.08,65.43,73.45,78.58,53.98,90.46L53.98,90.46z M33.31,88.46c-0.45,0.03-0.9,0.04-1.35,0.04C14.31,88.5,0,68.69,0,44.25 C0,21.23,12.7,2.31,28.93,0.2c-7.27,22.08-5.01,32.27-0.5,43.23C32.66,53.72,38.68,66.29,33.31,88.46L33.31,88.46z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
 
-                 </div>
+                    <div class="text-center mt-4 px-2">
+                      <div class="big_carousel_caption_title">
+                        <p>Latte</p>
+                      </div>
+                      <p class="big_carousel_caption_desc">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh
+                      </p>
+                    </div>
                   </div>
                 </div>
+              </div>
             </div>
 
             <a
-            class="carousel-control-prev"
-            href="#carouselExampleIndicators2"
-            role="button"
-            data-slide="prev"
-           
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleIndicators2"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true" ></span>
-            <span class="sr-only">Next</span>
-          </a>
-
-          
-
-
+              class="carousel-control-prev"
+              href="#carouselExampleIndicators2"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleIndicators2"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          </div>
-          
         </div>
-        <!-------------- big carouel section ends ---------------->
+      </div>
+      <!-------------- big carouel section ends ---------------->
 
-        <!-----------------Achievement Section------------------->
-          <div class="achievement_section">
-              <div class="achievement_section_wrapper d-flex justify-content-center align-items-center flex-column">
-                  <div class="history_section_header mt-4" style="width: 100%;">
-                  <h1>Our Achievements</h1>
-                </div>
-                <div class="split_section_small_white">
-                  <div class="white_beans_logo_small">
-                    <svg
-                      version="1.1"
-                      id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      x="0px"
-                      y="0px"
-                      viewBox="0 0 122.88 96.84"
-                      style="enable-background: new 0 0 122.88 96.84"
-                      xml:space="preserve"
-                    >
-                      <style type="text/css">
-                        .st0 {
-                          fill-rule: evenodd;
-                          clip-rule: evenodd;
-                        }
-                      </style>
-                      <g>
-                        <path
-                          class="st0"
-                          d="M31.96,0c14.08,0,26.03,12.61,30.29,30.11c-1.07,0.94-2.12,1.92-3.15,2.95c-9.36,9.36-15.11,20.63-16.82,31.26 c-1.2,7.41-0.44,14.53,2.38,20.54c-2.72,1.63-5.64,2.76-8.69,3.29c5.92-23.37,3.06-34.99-1.37-45.75 c-4.29-10.42-10.11-21.59-3.54-42.39C31.35,0.01,31.66,0,31.96,0L31.96,0z M115.57,26.95c12.48,12.48,8.59,36.61-8.69,53.89 c-15.95,15.95-37.73,20.49-50.8,11.29c20.71-12.34,26.9-22.58,31.38-33.32c4.33-10.4,8.12-22.42,27.47-32.47 C115.14,26.53,115.36,26.74,115.57,26.95L115.57,26.95z M53.98,90.46c-0.34-0.3-0.67-0.61-0.99-0.93 c-12.48-12.48-8.59-36.61,8.69-53.89c16.28-16.28,38.63-20.67,51.6-10.7C92.53,35.42,86.92,44.22,82.36,55.17 C78.08,65.43,73.45,78.58,53.98,90.46L53.98,90.46z M33.31,88.46c-0.45,0.03-0.9,0.04-1.35,0.04C14.31,88.5,0,68.69,0,44.25 C0,21.23,12.7,2.31,28.93,0.2c-7.27,22.08-5.01,32.27-0.5,43.23C32.66,53.72,38.68,66.29,33.31,88.46L33.31,88.46z"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-
-                 <div class="offer_section_box_wrapper">
-                    <div class="row">
-
-                       <div class="col-lg-4 col-md-4 col-sm-12">
-                         <div class="achievement_section_box d-flex flex-column flex-gap-20 justify-content-center align-items-center">
-                          <div class="d-flex">
-                             <span class="achievement_section_box_stat count">65</span><span class="achievement_section_box_stat ml-1">+</span>
-                          </div>   
-                         
-                            <span class="achievement_section_box_title">Varities Of Coffee</span>
-                            <span class="achievement_section_box_desc">Lorem ipsum dolor sit amet,consectetuer</span>
-                         </div>
-                       </div>
-
-                       <div class="col-lg-4 col-md-4 col-sm-12">
-                         <div class="achievement_section_box d-flex flex-column flex-gap-20 justify-content-center align-items-center">
-                              <div class="d-flex">
-                             <span class="achievement_section_box_stat count">700</span><span class="achievement_section_box_stat ml-1">+</span>
-                          </div>   
-                            <span class="achievement_section_box_title">Huge Customer Base</span>
-                            <span class="achievement_section_box_desc">Lorem ipsum dolor sit amet,consectetuer</span>
-                         </div>
-                       </div>
-
-
-                       <div class="col-lg-4 col-md-4 col-sm-12">
-                         <div class="achievement_section_box d-flex flex-column flex-gap-20 justify-content-center align-items-center">
-                             <div class="d-flex">
-                             <span class="achievement_section_box_stat count">50</span><span class="achievement_section_box_stat ml-1">+</span>
-                          </div>   
-                            <span class="achievement_section_box_title">Varities Of Coffee</span>
-                            <span class="achievement_section_box_desc">Lorem ipsum dolor sit amet,consectetuer</span>
-                         </div>
-                       </div>
-
-
-                        
-             
-                    </div>
-                 </div>
-              </div>
+      <!-----------------Achievement Section------------------->
+      <div class="achievement_section">
+        <div
+          class="achievement_section_wrapper d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="history_section_header mt-4" style="width: 100%">
+            <h1>Our Achievements</h1>
           </div>
-        <!-----------------Achievement Section Ends------------------->
+          <div class="split_section_small_white">
+            <div class="white_beans_logo_small">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 122.88 96.84"
+                style="enable-background: new 0 0 122.88 96.84"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M31.96,0c14.08,0,26.03,12.61,30.29,30.11c-1.07,0.94-2.12,1.92-3.15,2.95c-9.36,9.36-15.11,20.63-16.82,31.26 c-1.2,7.41-0.44,14.53,2.38,20.54c-2.72,1.63-5.64,2.76-8.69,3.29c5.92-23.37,3.06-34.99-1.37-45.75 c-4.29-10.42-10.11-21.59-3.54-42.39C31.35,0.01,31.66,0,31.96,0L31.96,0z M115.57,26.95c12.48,12.48,8.59,36.61-8.69,53.89 c-15.95,15.95-37.73,20.49-50.8,11.29c20.71-12.34,26.9-22.58,31.38-33.32c4.33-10.4,8.12-22.42,27.47-32.47 C115.14,26.53,115.36,26.74,115.57,26.95L115.57,26.95z M53.98,90.46c-0.34-0.3-0.67-0.61-0.99-0.93 c-12.48-12.48-8.59-36.61,8.69-53.89c16.28-16.28,38.63-20.67,51.6-10.7C92.53,35.42,86.92,44.22,82.36,55.17 C78.08,65.43,73.45,78.58,53.98,90.46L53.98,90.46z M33.31,88.46c-0.45,0.03-0.9,0.04-1.35,0.04C14.31,88.5,0,68.69,0,44.25 C0,21.23,12.7,2.31,28.93,0.2c-7.27,22.08-5.01,32.27-0.5,43.23C32.66,53.72,38.68,66.29,33.31,88.46L33.31,88.46z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
 
+          <div class="offer_section_box_wrapper">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div
+                  class="achievement_section_box d-flex flex-column flex-gap-20 justify-content-center align-items-center"
+                >
+                  <div class="d-flex">
+                    <span class="achievement_section_box_stat count">65</span
+                    ><span class="achievement_section_box_stat ml-1">+</span>
+                  </div>
 
-          <!--------------Second big carouel section --------------------->
-        <div class="big_carousal_section">
-          <div
+                  <span class="achievement_section_box_title"
+                    >Varities Of Coffee</span
+                  >
+                  <span class="achievement_section_box_desc"
+                    >Lorem ipsum dolor sit amet,consectetuer</span
+                  >
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div
+                  class="achievement_section_box d-flex flex-column flex-gap-20 justify-content-center align-items-center"
+                >
+                  <div class="d-flex">
+                    <span class="achievement_section_box_stat count">700</span
+                    ><span class="achievement_section_box_stat ml-1">+</span>
+                  </div>
+                  <span class="achievement_section_box_title"
+                    >Huge Customer Base</span
+                  >
+                  <span class="achievement_section_box_desc"
+                    >Lorem ipsum dolor sit amet,consectetuer</span
+                  >
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div
+                  class="achievement_section_box d-flex flex-column flex-gap-20 justify-content-center align-items-center"
+                >
+                  <div class="d-flex">
+                    <span class="achievement_section_box_stat count">50</span
+                    ><span class="achievement_section_box_stat ml-1">+</span>
+                  </div>
+                  <span class="achievement_section_box_title"
+                    >Varities Of Coffee</span
+                  >
+                  <span class="achievement_section_box_desc"
+                    >Lorem ipsum dolor sit amet,consectetuer</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-----------------Achievement Section Ends------------------->
+      <!-----------------Outlet Section------------------->
+      <section id="tranding">
+        <div
+          class="d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="offer_section_header">
+            <h1>Our Outlets</h1>
+          </div>
+          <div class="split_section_small_pink">
+            <div class="color_beans_logo">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 122.88 96.84"
+                style="enable-background: new 0 0 122.88 96.84"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M31.96,0c14.08,0,26.03,12.61,30.29,30.11c-1.07,0.94-2.12,1.92-3.15,2.95c-9.36,9.36-15.11,20.63-16.82,31.26 c-1.2,7.41-0.44,14.53,2.38,20.54c-2.72,1.63-5.64,2.76-8.69,3.29c5.92-23.37,3.06-34.99-1.37-45.75 c-4.29-10.42-10.11-21.59-3.54-42.39C31.35,0.01,31.66,0,31.96,0L31.96,0z M115.57,26.95c12.48,12.48,8.59,36.61-8.69,53.89 c-15.95,15.95-37.73,20.49-50.8,11.29c20.71-12.34,26.9-22.58,31.38-33.32c4.33-10.4,8.12-22.42,27.47-32.47 C115.14,26.53,115.36,26.74,115.57,26.95L115.57,26.95z M53.98,90.46c-0.34-0.3-0.67-0.61-0.99-0.93 c-12.48-12.48-8.59-36.61,8.69-53.89c16.28-16.28,38.63-20.67,51.6-10.7C92.53,35.42,86.92,44.22,82.36,55.17 C78.08,65.43,73.45,78.58,53.98,90.46L53.98,90.46z M33.31,88.46c-0.45,0.03-0.9,0.04-1.35,0.04C14.31,88.5,0,68.69,0,44.25 C0,21.23,12.7,2.31,28.93,0.2c-7.27,22.08-5.01,32.27-0.5,43.23C32.66,53.72,38.68,66.29,33.31,88.46L33.31,88.46z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="swiper_container">
+          <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1554679665-f5537f187268?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmVzdGF1cmFudHxlbnwwfDF8MHx8fDI%3D"
+                    alt="Tranding"
+                  />
+                  <div class="location_label">
+                    <ion-icon
+                      name="location-outline"
+                      style="color: white"
+                    ></ion-icon>
+                    London (UK)
+                  </div>
+                  <a
+                    class="location_find_button"
+                    href="https://maps.app.goo.gl/WMZpFF7kaw2uEnVh6"
+                    >Find Location</a
+                  >
+                </div>
+                <div class="tranding-slide-content"></div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1613946069412-38f7f1ff0b65?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHJlc3RhdXJhbnR8ZW58MHwxfDB8fHwy"
+                    alt="Tranding"
+                  />
+                  <div class="location_label">
+                    <ion-icon
+                      name="location-outline"
+                      style="color: white"
+                    ></ion-icon>
+                    Sydney (Australia)
+                  </div>
+                  <a
+                    class="location_find_button"
+                    href="https://maps.app.goo.gl/WMZpFF7kaw2uEnVh6"
+                    >Find Location</a
+                  >
+                </div>
+                <div class="tranding-slide-content"></div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1569096651661-820d0de8b4ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHJlc3RhdXJhbnR8ZW58MHwxfDB8fHwy"
+                    alt="Tranding"
+                  />
+                  <div class="location_label">
+                    <ion-icon
+                      name="location-outline"
+                      style="color: white"
+                    ></ion-icon>
+                    Torronto (Canada)
+                  </div>
+                  <a
+                    class="location_find_button"
+                    href="https://maps.app.goo.gl/WMZpFF7kaw2uEnVh6"
+                    >Find Location</a
+                  >
+                </div>
+                <div class="tranding-slide-content"></div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1542372147193-a7aca54189cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwc2hvcHN8ZW58MHwxfDB8fHwy"
+                    alt="Tranding"
+                  />
+                  <div class="location_label">
+                    <ion-icon
+                      name="location-outline"
+                      style="color: white"
+                    ></ion-icon>
+                    London (UK)
+                  </div>
+                  <a
+                    class="location_find_button"
+                    href="https://maps.app.goo.gl/WMZpFF7kaw2uEnVh6"
+                    >Find Location</a
+                  >
+                </div>
+                <div class="tranding-slide-content"></div>
+              </div>
+              <!-- Slide-end -->
+            </div>
+
+            <div class="tranding-slider-control">
+              <div class="swiper-button-prev">
+                <ion-icon
+                  name="arrow-back-outline"
+                  style="color: black"
+                ></ion-icon>
+              </div>
+              <div class="swiper-button-next">
+                <ion-icon
+                  name="arrow-forward-outline"
+                  style="color: black"
+                ></ion-icon>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-----------------Outlet Section Ends------------------->
+
+      <!--------------Second big carouel section --------------------->
+      <div class="big_carousal_section">
+        <div
           id="carouselExampleIndicators2"
           class="carousel slide"
           data-ride="carousel"
         >
-         
-            <div class="carousel-inner">
-             
-              <div class="carousel-item active">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
               <div
                 class="big_carousal_wrapper d-block w-100"
                 style="
@@ -919,76 +1101,73 @@
                 <div
                   class="color_overlay d-flex justify-content-center align-items-center"
                 >
-                  <div class="big_carousal_inner_wrapper d-flex flex-column justify-content-center align-items-center">
+                  <div
+                    class="big_carousal_inner_wrapper d-flex flex-column justify-content-center align-items-center"
+                  >
                     <div class="logo_wrapper">
                       <img src="assets/icons/logo-no-background.png" />
-                    </div>  
-                 
-                <div class="split_section_small_white">
-                  <div class="white_beans_logo_small">
-                    <svg
-                      version="1.1"
-                      id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      x="0px"
-                      y="0px"
-                      viewBox="0 0 122.88 96.84"
-                      style="enable-background: new 0 0 122.88 96.84"
-                      xml:space="preserve"
-                    >
-                      <style type="text/css">
-                        .st0 {
-                          fill-rule: evenodd;
-                          clip-rule: evenodd;
-                        }
-                      </style>
-                      <g>
-                        <path
-                          class="st0"
-                          d="M31.96,0c14.08,0,26.03,12.61,30.29,30.11c-1.07,0.94-2.12,1.92-3.15,2.95c-9.36,9.36-15.11,20.63-16.82,31.26 c-1.2,7.41-0.44,14.53,2.38,20.54c-2.72,1.63-5.64,2.76-8.69,3.29c5.92-23.37,3.06-34.99-1.37-45.75 c-4.29-10.42-10.11-21.59-3.54-42.39C31.35,0.01,31.66,0,31.96,0L31.96,0z M115.57,26.95c12.48,12.48,8.59,36.61-8.69,53.89 c-15.95,15.95-37.73,20.49-50.8,11.29c20.71-12.34,26.9-22.58,31.38-33.32c4.33-10.4,8.12-22.42,27.47-32.47 C115.14,26.53,115.36,26.74,115.57,26.95L115.57,26.95z M53.98,90.46c-0.34-0.3-0.67-0.61-0.99-0.93 c-12.48-12.48-8.59-36.61,8.69-53.89c16.28-16.28,38.63-20.67,51.6-10.7C92.53,35.42,86.92,44.22,82.36,55.17 C78.08,65.43,73.45,78.58,53.98,90.46L53.98,90.46z M33.31,88.46c-0.45,0.03-0.9,0.04-1.35,0.04C14.31,88.5,0,68.69,0,44.25 C0,21.23,12.7,2.31,28.93,0.2c-7.27,22.08-5.01,32.27-0.5,43.23C32.66,53.72,38.68,66.29,33.31,88.46L33.31,88.46z"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-
-                <div class="big_carousal_fixed_width_desc d-flex justify-content-center align-items-center flex-column mt-4">
-                    <p class="big_carousel_caption_desc" >
-                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                     aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                     nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                    </p>
-                    <div class="newsletter_section d-flex align-items-center justify-content-center flex-gap-20 mt-4">
-                      <input type="text" placeholder="Enter your email" />
-                      <button>Send</button>
                     </div>
-                </div>
 
-                 </div>
+                    <div class="split_section_small_white">
+                      <div class="white_beans_logo_small">
+                        <svg
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 122.88 96.84"
+                          style="enable-background: new 0 0 122.88 96.84"
+                          xml:space="preserve"
+                        >
+                          <style type="text/css">
+                            .st0 {
+                              fill-rule: evenodd;
+                              clip-rule: evenodd;
+                            }
+                          </style>
+                          <g>
+                            <path
+                              class="st0"
+                              d="M31.96,0c14.08,0,26.03,12.61,30.29,30.11c-1.07,0.94-2.12,1.92-3.15,2.95c-9.36,9.36-15.11,20.63-16.82,31.26 c-1.2,7.41-0.44,14.53,2.38,20.54c-2.72,1.63-5.64,2.76-8.69,3.29c5.92-23.37,3.06-34.99-1.37-45.75 c-4.29-10.42-10.11-21.59-3.54-42.39C31.35,0.01,31.66,0,31.96,0L31.96,0z M115.57,26.95c12.48,12.48,8.59,36.61-8.69,53.89 c-15.95,15.95-37.73,20.49-50.8,11.29c20.71-12.34,26.9-22.58,31.38-33.32c4.33-10.4,8.12-22.42,27.47-32.47 C115.14,26.53,115.36,26.74,115.57,26.95L115.57,26.95z M53.98,90.46c-0.34-0.3-0.67-0.61-0.99-0.93 c-12.48-12.48-8.59-36.61,8.69-53.89c16.28-16.28,38.63-20.67,51.6-10.7C92.53,35.42,86.92,44.22,82.36,55.17 C78.08,65.43,73.45,78.58,53.98,90.46L53.98,90.46z M33.31,88.46c-0.45,0.03-0.9,0.04-1.35,0.04C14.31,88.5,0,68.69,0,44.25 C0,21.23,12.7,2.31,28.93,0.2c-7.27,22.08-5.01,32.27-0.5,43.23C32.66,53.72,38.68,66.29,33.31,88.46L33.31,88.46z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div
+                      class="big_carousal_fixed_width_desc d-flex justify-content-center align-items-center flex-column mt-4"
+                    >
+                      <p class="big_carousel_caption_desc">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                        dolore magna aliquam erat volutpat. Ut wisi enim ad
+                        minim veniam, quis nostrud exerci tation ullamcorper
+                        suscipit lobortis nisl ut
+                      </p>
+                      <div
+                        class="newsletter_section d-flex align-items-center justify-content-center flex-gap-20 mt-4"
+                      >
+                        <input type="text" placeholder="Enter your email" />
+                        <button>Send</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-
-          
             </div>
           </div>
-          
         </div>
-        <!-------------- Second big carouel section ends ---------------->
-
-
-
       </div>
+      <!-------------- Second big carouel section ends ---------------->
     </div>
-
-    <script src="js/main.js"></script>
 
     <script>
       setTimeout(function () {
         $(".loader_bg").addClass("loader_hide");
       }, 1500);
-
     </script>
 
     <!-- Optional JavaScript -->
@@ -1008,16 +1187,39 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+      integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- swipper js imports -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!----------------main script---------->
+    <script src="js/main.js"></script>
+
     <!-- counter animation js -->
     <script>
-      $('.count').counterUp({
+      $(".count").counterUp({
         delay: 10,
-        time: 2000
-       });
+        time: 2000,
+      });
     </script>
-
   </body>
 </html>
