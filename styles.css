@@ -147,6 +147,7 @@ header {
 
 .color_overlay {
   min-height: 100vh;
+  min-width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -556,6 +557,63 @@ header {
 
 /*-----------history section ends----------*/
 
+/*-----------Big Carousal Section----------*/
+
+.big_carousal_wrapper {
+  background: no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+}
+
+.big_carousel_caption_title p {
+  font-weight: 100 !important;
+  font-size: 1.5rem;
+}
+
+.big_carousel_caption_desc {
+  font-size: small;
+  font-weight: 100 !important;
+  text-align: justify;
+  padding: 0rem 2rem;
+}
+
+.big_carousal_fixed_width_desc {
+  width: 50%;
+}
+
+.newsletter_section {
+  width: 100% !important;
+  max-width: 100%;
+}
+
+.newsletter_section input {
+  height: 35px;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  font-size: small;
+}
+
+.newsletter_section button {
+  border: none;
+  outline: none;
+  background-color: #222;
+  color: #ffffff;
+  height: 35px;
+  width: 100px;
+  font-size: small;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .big_carousal_fixed_width_desc {
+    width: 80%;
+  }
+}
+
+/*-----------Big Carousal Section ends----------*/
+
 /*----------- global ---------------*/
 .white_beans_logo svg {
   fill: #ffffff;
@@ -588,4 +646,12 @@ header {
 
 .title_text_white h1 {
   color: #ffffff !important;
+}
+
+.font_small {
+  font-size: small !important;
+}
+
+.font_larger {
+  font-size: larger !important;
 }
