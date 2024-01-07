@@ -614,6 +614,39 @@ header {
 
 /*-----------Big Carousal Section ends----------*/
 
+/*-----------Achievement Section ----------*/
+.achievement_section {
+  min-height: 80vh;
+  background-color: var(--brown_bg);
+  overflow-x: hidden;
+}
+
+.achievement_section_box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.achievement_section_box_stat {
+  font-size: 2rem;
+  color: #fff;
+}
+.achievement_section_box_title {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: lighter !important;
+  margin: 0.5rem 0rem;
+}
+
+.achievement_section_box_desc {
+  font-size: small;
+  font-weight: lighter;
+  text-align: justify;
+  color: #fff;
+  width: fit-content;
+}
+
+/*-----------Achievement Section ends----------*/
+
 /*----------- global ---------------*/
 .white_beans_logo svg {
   fill: #ffffff;
@@ -639,6 +672,9 @@ header {
 /* browninsh--->#957D71 */
 
 @media (max-width: 640px) {
+  /* html {
+    font-size: 10px;
+  } */
   .hide_on_phone {
     display: none;
   }
