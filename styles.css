@@ -9,7 +9,7 @@
 
 /********Custom Scrollbar********************************/
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 5px !important;
 }
 
 ::-webkit-scrollbar-track {
@@ -17,7 +17,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--pink_bg);
+  background: var(--pink_bg) !important;
   border-radius: 10px;
 }
 
@@ -793,6 +793,87 @@ header {
   background: var(--primary);
 }
 /*--------------Focus Carousel Section ends---------------------*/
+
+/*-------------Footer section---------*/
+.footer_section {
+  background: no-repeat center center;
+  background-size: cover;
+  min-height: 60vh;
+  color: white;
+
+  /* max-width: 1200px; */
+}
+
+.footer_section_wrapper {
+  padding: 1rem;
+}
+
+.small_nav_links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0rem;
+}
+
+.small_nav_links a {
+  padding: 0rem 0.5rem;
+  text-decoration: none;
+  font-size: small;
+  font-weight: normal;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.small_social_links {
+  display: flex;
+  gap: 10;
+  flex-wrap: wrap;
+}
+
+.small_social_links a {
+  text-decoration: none;
+  padding: 1rem;
+
+  &:hover {
+    color: goldenrod;
+  }
+}
+
+.footer_section_title h6 {
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.footer_section_desc {
+  font-size: small;
+  width: 70%;
+}
+
+.contact_details_section {
+  font-size: small !important;
+}
+
+.footer_section_title h6 {
+  position: relative;
+}
+
+.footer_section_title h6::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: goldenrod;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  opacity: 1;
+}
+
+.coffee_mug_wrapper img {
+  height: 15em;
+  width: auto;
+}
+
+/*-------------Footer section ends---------*/
 
 /*----------- global ---------------*/
 .white_beans_logo svg {
