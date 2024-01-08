@@ -17,7 +17,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--pink_bg) !important;
+  background: var(--brown_bg) !important;
   border-radius: 10px;
 }
 
@@ -810,17 +810,25 @@ header {
 
 .small_nav_links {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 1rem 0rem;
+  width: 100%;
 }
 
 .small_nav_links a {
-  padding: 0rem 0.5rem;
+  padding: 0.5rem;
   text-decoration: none;
   font-size: small;
   font-weight: normal;
   &:hover {
     color: #fff;
+  }
+}
+
+@media (max-width: 640px) {
+  .small_nav_links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -871,6 +879,10 @@ header {
 .coffee_mug_wrapper img {
   height: 15em;
   width: auto;
+}
+
+.bottom_footer {
+  font-size: smaller;
 }
 
 /*-------------Footer section ends---------*/
