@@ -155,7 +155,7 @@ header {
 }
 
 .content_wrapper {
-  min-height: 80vh;
+  min-height: 50vh;
   padding-top: 10rem;
 }
 
@@ -366,7 +366,7 @@ header {
 .hero_desc_section {
   font-size: small;
   margin: 0 auto;
-  max-width: 70vw;
+  max-width: 70%;
   text-align: justify;
 }
 
@@ -652,7 +652,7 @@ header {
 
 /*-----------Achievement Section ----------*/
 .achievement_section {
-  min-height: 80vh;
+  min-height: 50vh;
   background-color: var(--brown_bg);
   overflow-x: hidden;
 }
