@@ -375,7 +375,7 @@ header {
 /*----------------Offer Section---------------------------------*/
 .offer_section {
   background-color: var(--pink_bg);
-  min-height: 50vh;
+  /* min-height: 50vh; */
   height: auto;
 }
 
@@ -652,9 +652,10 @@ header {
 
 /*-----------Achievement Section ----------*/
 .achievement_section {
-  min-height: 50vh;
+  /* min-height: 50vh; */
   background-color: var(--brown_bg);
   overflow-x: hidden;
+  padding-bottom: 2rem;
 }
 
 .achievement_section_box {
@@ -667,7 +668,7 @@ header {
   color: #fff;
 }
 .achievement_section_box_title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #fff;
   font-weight: lighter !important;
   margin: 0.5rem 0rem;
@@ -676,7 +677,7 @@ header {
 .achievement_section_box_desc {
   font-size: small;
   font-weight: lighter;
-  text-align: justify;
+  text-align: center;
   color: #fff;
   width: fit-content;
 }
