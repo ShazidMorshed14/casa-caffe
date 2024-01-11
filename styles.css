@@ -574,7 +574,7 @@ header {
   position: relative;
   background-color: var(--white);
   color: white;
-  padding: 1rem;
+  /* padding: 1rem; */
   height: 180px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   background: no-repeat center center;
@@ -586,12 +586,14 @@ header {
 
 .food_label {
   position: absolute;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 0.5rem;
   font-size: small;
-  top: 0;
+  width: 100%;
+  bottom: 0;
   left: 0;
-  border-radius: 0px 0px 8px 0px;
+  border-radius: 0px 0px 0px 0px;
+  text-align: center;
 }
 
 /*------customer fav section ends-----------------*/
@@ -621,7 +623,7 @@ header {
   width: 50%;
 }
 
-.newsletter_section {
+/* .newsletter_section {
   width: 100% !important;
   max-width: 100%;
 }
@@ -643,7 +645,7 @@ header {
   width: 100px;
   font-size: small;
   cursor: pointer;
-}
+} */
 
 @media (max-width: 640px) {
   .big_carousal_fixed_width_desc {
