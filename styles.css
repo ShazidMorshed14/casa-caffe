@@ -39,7 +39,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Manrope", sans-serif !important;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -180,6 +180,12 @@ header {
   border: none !;
 }
 
+@media (min-width: 640px) {
+  .hamburger {
+    display: none !important;
+  }
+}
+
 .hamburger .bar,
 .hamburger:after,
 .hamburger:before {
@@ -260,12 +266,8 @@ header {
 }
 
 .mobile_logo span {
-  font-weight: lighter;
+  font-weight: light;
   font-size: large;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5;
 }
 
 .mobile_logo span svg {
@@ -315,13 +317,14 @@ header {
   text-decoration: none !important;
   position: relative;
   color: #fff;
+  /* font-size: 12px; */
 }
 
 .navbar_wrapper nav ul li a::after {
   content: "";
   height: 2px;
   width: 0%;
-  background: goldenrod;
+  background: #ffffff;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -364,7 +367,7 @@ header {
 }
 
 .hero_desc_section {
-  font-size: small;
+  font-size: 12px;
   margin: 0 auto;
   max-width: 70%;
   text-align: justify;
