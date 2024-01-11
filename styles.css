@@ -317,7 +317,7 @@ header {
   text-decoration: none !important;
   position: relative;
   color: #fff;
-  /* font-size: 12px; */
+  font-size: small;
 }
 
 .navbar_wrapper nav ul li a::after {
@@ -749,7 +749,7 @@ header {
 }
 
 #tranding .tranding-slider {
-  height: 42rem;
+  height: 35rem;
   padding: 2rem 0;
   position: relative;
 }
@@ -761,9 +761,15 @@ header {
 }
 
 .tranding-slide {
-  width: 20rem;
+  width: 18rem;
   height: auto;
   position: relative;
+
+  &:hover {
+    .location_find_button {
+      display: block;
+    }
+  }
 }
 
 .tranding-slide-img {
@@ -776,28 +782,37 @@ header {
   right: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 0.5rem;
-  color: var(--white);
-  font-size: small;
+  color: var(--white) !important;
+  font-size: 0.6rem;
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
+  text-decoration: none !important;
+  max-width: 20em;
 }
 
 .location_find_button {
   position: absolute;
   bottom: 1rem;
   left: 1rem;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 0.5rem 1rem;
   color: var(--white);
   font-size: large;
   border-radius: 8px;
   text-decoration: none !important;
+  transition: 5s ease-in;
+  font-size: 0.6rem;
   &:hover {
     color: var(--white);
   }
+}
+
+.location_find_button {
+  display: none;
 }
 
 @media (max-width: 500px) {
@@ -847,11 +862,8 @@ header {
 
 /*-------------Footer section---------*/
 .footer_section {
-  background: no-repeat center center;
-  background-size: cover;
-  min-height: 60vh;
+  background-color: var(--brown_bg);
   color: white;
-
   /* max-width: 1200px; */
 }
 
@@ -869,7 +881,7 @@ header {
 .small_nav_links a {
   padding: 0.5rem;
   text-decoration: none;
-  font-size: small;
+  font-size: 10px;
   font-weight: normal;
   &:hover {
     color: #fff;
@@ -894,22 +906,22 @@ header {
   padding: 1rem;
 
   &:hover {
-    color: goldenrod;
+    color: #000000;
   }
 }
 
 .footer_section_title h6 {
   font-weight: normal;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .footer_section_desc {
-  font-size: small;
+  font-size: 0.5rem;
   width: 70%;
 }
 
 .contact_details_section {
-  font-size: small !important;
+  font-size: 0.5rem !important;
 }
 
 .footer_section_title h6 {
@@ -920,7 +932,7 @@ header {
   content: "";
   height: 2px;
   width: 100%;
-  background: goldenrod;
+  background: var(--white);
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -933,7 +945,7 @@ header {
 }
 
 .bottom_footer {
-  font-size: smaller;
+  font-size: 10px;
 }
 
 /*-------------Footer section ends---------*/
